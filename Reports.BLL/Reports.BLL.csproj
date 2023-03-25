@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Reports.DAL\Reports.DAL.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Remove="Entities\**"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Remove="Entities\**"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Remove="Entities\**"/>
+    </ItemGroup>
+
+</Project>
